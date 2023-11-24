@@ -1,0 +1,12 @@
+diff -Nur owasp-java-encoder-1.2.1-orig/META-INF/MANIFEST.MF owasp-java-encoder-1.2.1/META-INF/MANIFEST.MF
+--- owasp-java-encoder-1.2.1-orig/META-INF/MANIFEST.MF	1969-12-31 19:00:00.000000000 -0500
++++ owasp-java-encoder-1.2.1/META-INF/MANIFEST.MF	2018-08-07 11:59:15.923471361 -0400
+@@ -0,0 +1,8 @@
++Manifest-Version: 1.0
++Bnd-LastModified: 1533328833261
++Bundle-ManifestVersion: 2
++Bundle-Name: org.owasp.encoder
++Bundle-SymbolicName: org.owasp.encoder
++Created-By: 1.8.0_181 (Oracle Corporation)
++Export-Package: org.owasp.encoder
++Tool: Bnd-1.50.0
