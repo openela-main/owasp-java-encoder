@@ -1,0 +1,32 @@
+diff --git a/core/pom.xml b/core/pom.xml
+index cd0293e..6d4276e 100644
+--- a/core/pom.xml
++++ b/core/pom.xml
+@@ -46,7 +46,7 @@
+     </parent>
+ 
+     <artifactId>encoder</artifactId>
+-    <packaging>jar</packaging>
++    <packaging>bundle</packaging>
+ 
+     <name>Java Encoder</name>
+     <description>
+@@ -67,6 +67,18 @@
+                     </excludes>
+                 </configuration>
+             </plugin>
++            <plugin>
++                <groupId>org.apache.felix</groupId>
++                <artifactId>maven-bundle-plugin</artifactId>
++                <version>4.2.1</version>
++                <extensions>true</extensions>
++                <configuration>
++                    <instructions>
++                        <Export-Package>org.owasp.encoder</Export-Package>
++                        <Bundle-SymbolicName>org.owasp.encoder</Bundle-SymbolicName>
++                    </instructions>
++                </configuration>
++            </plugin>
+         </plugins>
+     </build>
+     <profiles>
